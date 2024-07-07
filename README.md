@@ -11,11 +11,28 @@ First, you will need to start **Metro**, the JavaScript _bundler_ that ships _wi
 To start Metro, run the following command from the _root_ of your React Native project:
 
 ```bash
+
 # using npm
 npm start
 
 # OR using Yarn
 yarn start
+
+
+npm uninstall -g react-native-cli @react-native-community/cli
+
+npx react-native init BillionaireApp
+cd BillionaireApp
+
+npm install @react-navigation/native @react-navigation/stack react-native-screens react-native-safe-area-context
+
+mkdir src src/screens src/components src/data
+touch src/screens/HomeScreen.js src/screens/DetailsScreen.js src/components/BillionaireCard.js src/data/billionaires.js
+
+npm install react-native-gesture-handler
+
+npx react-native run-android
+
 ```
 
 ## Step 2: Start your Application
